@@ -13,8 +13,26 @@ const kMessageTextStyle = TextStyle(
 const kButtonTextStyle = TextStyle(
   fontSize: 30.0,
   fontFamily: 'Spartan MB',
+  color: Colors.white,
 );
 
 const kConditionTextStyle = TextStyle(
   fontSize: 100.0,
+);
+
+final kTextFieldInputDecoration = InputDecoration(
+  filled: true,
+  fillColor: Colors.white,
+  icon: const Icon(
+    Icons.location_city,
+    color: Colors.white,
+  ),
+  hintText: 'Enter city name',
+  hintStyle: const TextStyle(
+    color: Colors.grey,
+  ),
+  border: OutlineInputBorder(
+    borderRadius: BorderRadius.circular(10),
+    borderSide: BorderSide.none,
+  ),
 );
